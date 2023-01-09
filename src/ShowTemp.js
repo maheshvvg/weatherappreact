@@ -22,7 +22,7 @@ function ShowTemp({text,foredata}) {
         // console.log("day",day);
         //     console.log("enterng")
             
-            if(dayInDig+dayadd === 0){
+            if(dayInDig+dayadd === 7){
                 return "Sunday";
               }
             else if(dayInDig+dayadd === 1){
@@ -65,7 +65,7 @@ function ShowTemp({text,foredata}) {
                         </div>
                         <div class="row bottom">
                             <div class="col"><hr/></div>
-                            <div class="col border">
+                            <div class="col ">
                                 <div class="row">{day(date,1)}</div>
                                 <div class="row"><b>{conversion(foredata.day2temp)}&deg;</b></div>
                             </div>
